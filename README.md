@@ -697,7 +697,7 @@ class ExtrasExample extends React.PureComponent {
 
 ### Layered Charts
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/stacked-charts.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/layered-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
