@@ -18,15 +18,13 @@ Click an example to see the code! 💪
 * [Bar](#bar)
 * [Line](#linechart)
 * [ProgressCircle](#progresscircle)
-* [Scale](#scale)
-* [Decorator](#decorator)
-* [Extras](#extras)
 
 ## AreaChart
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-chart.png" width=33% />](./storybook/stories/area-chart/with-line.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient.png" width=33% />](./storybook/stories/area-chart/with-gradient.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-chart-area.png" width=33% />](./storybook/stories/partial-chart/area-chart.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/layered-charts.png" width=33% />](./storybook/stories/layered-charts.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-time.png" width=33% />](./storybook/stories/x-axis/scale-time.js)
 
 ## BarChart
 
@@ -40,17 +38,12 @@ Click an example to see the code! 💪
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient-line.png" width=33% />](./storybook/stories/line-chart/with-gradient.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-chart-line.png" width=33% />](./storybook/stories/partial-chart/line-chart.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/custom-grid.png" width=33% />](./storybook/stories/custom-grid.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
 
 ## ProgressCircle
 
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/progress-gauge.png" width=33% />](./storybook/stories/progress-gauge/index.js)
 
-## Scale
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-time.png" width=33% />](./storybook/stories/x-axis/scale-time.js)
-
-## Extras
-
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
 
 ## License
 [MIT](./LICENSE)
