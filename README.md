@@ -36,8 +36,7 @@ Just make sure that all examples are fully reproducible demos so that people don
 
 ### AreaChart with line
 
-![Area chart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/area-chart.png)
-
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/area-chart.png" width=50% />
 <details>
 <summary> Code </summary>
 
@@ -79,8 +78,7 @@ class AreaChartExample extends React.PureComponent {
 </details>
 
 ### AreaChart with gradient 
-![Gradient AreaChart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient.png)
-
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient.png" width=50% />
 <details><summary>Code</summary>
 
 ```javascript
@@ -122,7 +120,7 @@ export default GradientExample
 </details>
 
 ### AreaChart clipped
-![Partial Charts](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -207,7 +205,7 @@ class PartialAreaChartExample extends React.PureComponent {
 
 ### BarChart multiple data sets
 
-![Grouped bar chart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/grouped-bar-chart.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/grouped-bar-chart.png" width=50% />
 
 <details>
     <summary> Code </summary>
@@ -259,7 +257,7 @@ class GroupedBarChartExample extends React.PureComponent {
 </details>
 
 ### BarChart with gradient
-![Gradient BarChart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-bar.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-bar.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -320,7 +318,7 @@ export default GradientBarExample
 ## LineChart
 
 ### LineChart with shadow
-![Line chart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/line-chart.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/line-chart.png" width=50% />
 
 <details>
     <summary>Code</summary>
@@ -364,7 +362,7 @@ class LineChartExample extends React.PureComponent {
 
 ### LineChart with gradient
 
-![Gradient LineChart](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-line.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-line.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -407,7 +405,7 @@ class GradientLineExample extends React.PureComponent {
 </details>
 
 ### LineChart clipped
-![Partial Charts](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -486,8 +484,7 @@ class PartialLineChartExample extends React.PureComponent {
 
 ### Gauge
 
-![Progress gauge](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/progress-gauge.png)
-
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/progress-gauge.png" width=50% />
 
 <details>
     <summary>Code</summary>
@@ -519,7 +516,7 @@ class ProgressGaugeExample extends React.PureComponent {
 ## Extras
 
 ### Labels
-![Extras](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/extras.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/extras.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -617,7 +614,7 @@ class ExtrasExample extends React.PureComponent {
 
 ### Layered Charts
 
-![Stacked Charts](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/stacked-charts.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/stacked-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -661,7 +658,7 @@ class LayeredChartsExample extends React.PureComponent {
 
 ## Grid
 
-![Custom grid](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/custom-grid.png)
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/custom-grid.png" width=50% />
 
 <details><summary>Code</summary>
 
