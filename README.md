@@ -10,6 +10,8 @@ Have a separate repo with some awesome examples? Make a PR and just include the 
 
 Just make sure that all examples are fully reproducible demos so that people don't have to figure a bunch of stuff out on the own.
 
+Click an example to see the code! 💪
+
 # Examples
 
 * [AreaChart](#areachart)
@@ -41,14 +43,14 @@ Just make sure that all examples are fully reproducible demos so that people don
 
 ## ProgressCircle
 
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/progress-gauge.png" width=50% />](./storybook/stories/progress-gauge/index.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/progress-gauge.png" width=33% />](./storybook/stories/progress-gauge/index.js)
 
 ## Scale
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-time.png" width=50% />](./storybook/stories/x-axis/scale-time.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-time.png" width=33% />](./storybook/stories/x-axis/scale-time.js)
 
 ## Extras
 
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=50% />](./storybook/stories/extras.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
 
 ## License
 [MIT](./LICENSE)
