@@ -8,7 +8,7 @@ Make a PR with your code and include it here for everyone to see.
 
 Have a separate repo with some awesome examples? Make a PR and just include the link to your repo in this README, We'd rather have too many cool examples!
 
-Just make sure that all examples are fully reproducible demos so that people don't hav eto figure a bunch of stuff out on the own.
+Just make sure that all examples are fully reproducible demos so that people don't have to figure a bunch of stuff out on the own.
 
 # Examples
 
