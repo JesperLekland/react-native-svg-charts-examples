@@ -29,6 +29,7 @@ class XAxisExample extends React.PureComponent {
                     gridMin={0}
                 />
                 <XAxis
+                    style={{ marginTop: 10 }}
                     data={ data }
                     scale={scale.scaleBand}
                     formatLabel={ (value, index) => index }
