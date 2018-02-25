@@ -34,6 +34,10 @@ Just make sure that all examples are fully reproducible demos so that people don
 
 ## Area
 
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-chart.png" width=33% />](./storybook/stories/area-chart/with-line.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient.png" width=33% />](./storybook/stories/area-chart/with-gradient.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-chart-area.png" width=33% />](./storybook/stories/partial-chart/area-chart.js)
+
 ### AreaChart with line
 
 <img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-chart.png" width=50% />
