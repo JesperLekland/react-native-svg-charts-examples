@@ -25,8 +25,8 @@ Just make sure that all examples are fully reproducible demos so that people don
     * [clipped](#linechart-clipped)
 * [ProgressCircle](#progress-circle)
     * [Gauge](#gauge)
-* [YAxis](#yaxis)
-* [XAxis](#xaxis)
+* [Scale](#scale)
+    * [ScaleTime](#scaletime)
 * [Decorator](#decorator)
 * [Extras](#extras)
 * [Layered Charts](#layered-charts)
@@ -36,7 +36,7 @@ Just make sure that all examples are fully reproducible demos so that people don
 
 ### AreaChart with line
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/area-chart.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-chart.png" width=50% />
 <details>
 <summary> Code </summary>
 
@@ -78,7 +78,7 @@ class AreaChartExample extends React.PureComponent {
 </details>
 
 ### AreaChart with gradient 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient.png" width=50% />
 <details><summary>Code</summary>
 
 ```javascript
@@ -120,7 +120,7 @@ export default GradientExample
 </details>
 
 ### AreaChart clipped
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -205,7 +205,7 @@ class PartialAreaChartExample extends React.PureComponent {
 
 ### BarChart multiple data sets
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/grouped-bar-chart.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/grouped-bar-chart.png" width=50% />
 
 <details>
     <summary> Code </summary>
@@ -257,7 +257,7 @@ class GroupedBarChartExample extends React.PureComponent {
 </details>
 
 ### BarChart with gradient
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-bar.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient-bar.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -318,7 +318,7 @@ export default GradientBarExample
 ## LineChart
 
 ### LineChart with shadow
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/line-chart.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/line-chart.png" width=50% />
 
 <details>
     <summary>Code</summary>
@@ -362,7 +362,7 @@ class LineChartExample extends React.PureComponent {
 
 ### LineChart with gradient
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/gradient-line.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient-line.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -405,7 +405,7 @@ class GradientLineExample extends React.PureComponent {
 </details>
 
 ### LineChart clipped
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -484,7 +484,7 @@ class PartialLineChartExample extends React.PureComponent {
 
 ### Gauge
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/progress-gauge.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/progress-gauge.png" width=50% />
 
 <details>
     <summary>Code</summary>
@@ -513,10 +513,93 @@ class ProgressGaugeExample extends React.PureComponent {
 ```
 </details>
 
+## Scale
+### ScaleTime
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-time.png" width=50% />
+
+<details><summary>Code</summary>
+
+```javascript
+import React from 'react'
+import { AreaChart, XAxis } from 'react-native-svg-charts'
+import { View } from 'react-native'
+import * as scale from 'd3-scale'
+import * as shape from 'd3-shape'
+import dateFns from 'date-fns'
+
+class ScaleTimeExample extends React.PureComponent {
+
+    render() {
+
+        const data = [
+            {
+                value: 50,
+                date: dateFns.setHours(new Date(2018, 0, 0), 6),
+            },
+            {
+                value: 10,
+                date: dateFns.setHours(new Date(2018, 0, 0), 9),
+            },
+            {
+                value: 150,
+                date: dateFns.setHours(new Date(2018, 0, 0), 15),
+            },
+            {
+                value: 10,
+                date: dateFns.setHours(new Date(2018, 0, 0), 18),
+            },
+            {
+                value: 100,
+                date: dateFns.setHours(new Date(2018, 0, 0), 21),
+            },
+            {
+                value: 20,
+                date: dateFns.setHours(new Date(2018, 0, 0), 24),
+            },
+        ]
+
+        return (
+            <View style={{ height: 200, padding: 20 }}>
+                <AreaChart
+                  style={{ flex: 1 }}
+                  data={data}
+                  yAccessor={({ item }) => item.value}
+                  xAccessor={({ item }) => item.date}
+                  xScale={scale.scaleTime}
+                  contentInset={{ top: 10, bottom: 10 }}
+                  svg={{ fill: 'rgba(134, 65, 244, 0.5)' }}
+                  curve={shape.curveLinear}
+                />
+                <XAxis
+                  data={data}
+                  svg={{
+                      fill: 'black',
+                      fontSize: 8,
+                      fontWeight: 'bold',
+                      rotation: 20,
+                      originY: 30,
+                      y: 5,
+                  }}
+                  xAccessor={({ item }) => item.date}
+                  scale={scale.scaleTime}
+                  numberOfTicks={6}
+                  style={{ marginHorizontal: -15, height: 20 }}
+                  contentInset={{ left: 10, right: 25 }}
+                  formatLabel={(value) => dateFns.format(value, 'HH:mm')}
+                />
+            </View>
+        )
+    }
+
+}
+
+```
+</details>
+
 ## Extras
 
 ### Labels
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/extras.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -614,7 +697,7 @@ class ExtrasExample extends React.PureComponent {
 
 ### Layered Charts
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/stacked-charts.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/stacked-charts.png" width=50% />
 
 <details><summary>Code</summary>
 
@@ -658,7 +741,7 @@ class LayeredChartsExample extends React.PureComponent {
 
 ## Grid
 
-<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/custom-grid.png" width=50% />
+<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/custom-grid.png" width=50% />
 
 <details><summary>Code</summary>
 
