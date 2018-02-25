@@ -23,20 +23,14 @@ Just make sure that all examples are fully reproducible demos so that people don
     * [with shadow](#linechart-with-shadow)
     * [with gradient](#linechart-with-gradient)
     * [clipped](#linechart-clipped)
-* [Pie](#piechart)
-* [ProgressCircle](#progress)
+* [ProgressCircle](#progress-circle)
+    * [Gauge](#gauge)
 * [YAxis](#yaxis)
 * [XAxis](#xaxis)
-
-Also see [other examples](#other-examples)
-* [Gradient](#gradient)
 * [Decorator](#decorator)
 * [Extras](#extras)
-* [GridMin/Max](#gridminmax)
 * [Layered Charts](#layered-charts)
-* [PieChart with labels](#piechart-with-labels)
-* [Custom Grid](#custom-grid)
-* [Partial Chart](#partial-charts)
+* [Grid](#grid)
 
 ## Area
 
@@ -413,6 +407,7 @@ class GradientLineExample extends React.PureComponent {
 </details>
 
 ### LineChart clipped
+![Partial Charts](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/partial-charts.png)
 
 <details><summary>Code</summary>
 
@@ -487,7 +482,9 @@ class PartialLineChartExample extends React.PureComponent {
 ```
 </details>
 
-## Progress circle - Gauge variant
+## Progress circle
+
+### Gauge
 
 ![Progress gauge](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/progress-gauge.png)
 
@@ -519,13 +516,12 @@ class ProgressGaugeExample extends React.PureComponent {
 ```
 </details>
 
-See [Partial Chart](#partial-chart) for use case for this.
+## Extras
 
-Remember that all components returned by an `extras` function must be one that is renderable by the [`<Svg/>`](https://github.com/react-native-community/react-native-svg#svg) element, i.e all components supported by [react-native-svg](https://github.com/react-native-community/react-native-svg)
-
+### Labels
 ![Extras](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/extras.png)
 
-#### Example
+<details><summary>Code</summary>
 
 ```javascript
 import React from 'react'
@@ -616,137 +612,15 @@ class ExtrasExample extends React.PureComponent {
 
 }
 ```
+</details>
 
-### gridMin/Max
-Charts normally render edge to edge, if this is not the wanted behaviour it can easily be altered with the `gridMin` and `gridMax` props. Just compare the below example with the example for the regular [AreaChart](#areachart)
-
-![Grid Min Max](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/grid-min-max.png)
-
-#### Example
-```javascript
-import React from 'react'
-import { AreaChart, Path } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
-
-class GridMinMaxExample extends React.PureComponent {
-
-    render() {
-
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
-
-        return (
-            <AreaChart
-                style={{ height: 200 }}
-                data={data}
-                svg={{ fill: 'rgba(134, 65, 244, 0.2)' }}
-                curve={shape.curveNatural}
-                gridMax={500}
-                gridMin={-500}
-                extras={[
-                    ({ line }) => (
-                        <Path
-                            key={'line '}
-                            d={line}
-                            stroke={'rgb(134, 65, 244)'}
-                            fill={'none'}
-                        />
-                    ),
-                ]}
-            />
-        )
-    }
-
-}
-```
-
-### StackedAreaChart with YAxis
-Since the `<StackedAreaChart>` uses a different data structure and can be affected by both the `order` and `offset` prop it's not obvious how to extra the dataPoints for the YAxis.
-The remedy this the AreaStackChart exposes a static API with a function `extractDataPoints` where you must pass in the same `data`,  `keys` ( as well as  `order` and `offset` if other than default is used) as the props to the component itself
-
-![Area stack chart with YAxis](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/area-stack-with-y-axis.png)
-
-```javascript
-import React from 'react'
-import { StackedAreaChart, YAxis } from 'react-native-svg-charts'
-import * as shape from 'd3-shape'
-import { View } from 'react-native'
-
-class AreaStackWithAxisExample extends React.PureComponent {
-
-    render() {
-
-        const data = [
-            {
-                month: new Date(2015, 0, 1),
-                apples: 3840,
-                bananas: 1920,
-                cherries: 960,
-                dates: 400,
-            },
-            {
-                month: new Date(2015, 1, 1),
-                apples: 1600,
-                bananas: 1440,
-                cherries: 960,
-                dates: 400,
-            },
-            {
-                month: new Date(2015, 2, 1),
-                apples: 640,
-                bananas: 960,
-                cherries: 3640,
-                dates: 400,
-            },
-            {
-                month: new Date(2015, 3, 1),
-                apples: 3320,
-                bananas: 480,
-                cherries: 640,
-                dates: 400,
-            },
-        ]
-
-        const colors = [ 'rgb(138, 0, 230, 0.8)', 'rgb(173, 51, 255, 0.8)', 'rgb(194, 102, 255, 0.8)', 'rgb(214, 153, 255, 0.8)' ]
-        const keys   = [ 'apples', 'bananas', 'cherries', 'dates' ]
-
-        return (
-            <View style={ { flexDirection: 'row', height: 200 } }>
-                <StackedAreaChart
-                    style={ { flex: 1 } }
-                    contentInset={ { top: 10, bottom: 10 } }
-                    data={ data }
-                    keys={ keys }
-                    colors={ colors }
-                    curve={ shape.curveNatural }
-                    { ...this.props }
-                />
-                <YAxis
-                    style={ { position: 'absolute', top: 0, bottom: 0 }}
-                    data={ StackedAreaChart.extractDataPoints(data, keys) }
-                    contentInset={ { top: 10, bottom: 10 } }
-                    svg={ {
-                        fontSize: 8,
-                        fill: 'white',
-                        stroke: 'black',
-                        strokeWidth: 0.1,
-                        alignmentBaseline: 'baseline',
-                        baselineShift: '3',
-                    } }
-                />
-            </View>
-        )
-    }
-}
-
-```
 
 ### Layered Charts
-This library supports layering/composing out of the box with simple styling. As long as the layered charts share the same container and are correctly positioned everything will work as expected.
-If your data sets don't share the same max/min data make sure to utilize the `gridMin/gridMax` prop to align the charts.
 
 ![Stacked Charts](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/stacked-charts.png)
 
-#### Example
+<details><summary>Code</summary>
+
 ```javascript
 import React from 'react'
 import { AreaChart } from 'react-native-svg-charts'
@@ -782,74 +656,10 @@ class LayeredChartsExample extends React.PureComponent {
 
 }
 ```
-
-### PieChart with labels
-The PieChart as well as most of the charts support decorators.
-In the case of the PieChart you get `pieCentroid` and `labelCentroid` instead of the `x` and `y` as arguments in the `renderDecorator` callback.
-This will allow you to render labels aligned with your pie slices. Experiment with `outerRadius` and `labelRadius` to layout your labels in relation to your chart
-
-![PieChart with labels](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/pie-chart-with-labels.png)
-
-### Example
-```javascript
-import React from 'react'
-import { PieChart } from 'react-native-svg-charts'
-import { Circle, G, Line } from 'react-native-svg'
-
-class PieChartWithLabelExample extends React.PureComponent {
-
-    render() {
-
-        const data = [ 50, 10, 40, 95, -4, -24, 85, 91 ]
-
-        const randomColor = () => ('#' + (Math.random() * 0xFFFFFF << 0).toString(16) + '000000').slice(0, 7)
-
-        const pieData = data
-            .filter(value => value > 0)
-            .map((value, index) => ({
-                value,
-                color: randomColor(),
-                key: `pie-${index}`,
-            }))
-
-        return (
-            <PieChart
-                style={ { height: 200 } }
-                data={ pieData }
-                spacing={ 0 }
-                innerRadius={ 20 }
-                outerRadius={ 55 }
-                labelRadius={ 80 }
-                renderDecorator={ ({ item, pieCentroid, labelCentroid, index }) => (
-                    <G key={ index }>
-                        <Line
-                            x1={ labelCentroid[ 0 ] }
-                            y1={ labelCentroid[ 1 ] }
-                            x2={ pieCentroid[ 0 ] }
-                            y2={ pieCentroid[ 1 ] }
-                            stroke={ item.color }
-                        />
-                        <Circle
-                            cx={ labelCentroid[ 0 ] }
-                            cy={ labelCentroid[ 1 ] }
-                            r={ 15 }
-                            fill={ item.color }
-                        />
-                    </G>
-                ) }
-
-            />
-        )
-    }
-
-}
-```
+</details>
 
 
-### Custom grid
-The default grid is just a collection of horizontal `Line`s. If you simply want to change the direction or styling look at the `renderGrid` & `gridProps` prop.
-Some projects might require more control of the grid ( direction, different distributions etc), therefore all affected components support the `renderGrid` prop.
-The `renderGrid` prop takes a function and provides the `x`, `y`, `ticks` and `dataPoints` arguments. Use them as in the example below
+## Grid
 
 ![Custom grid](https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts/master/screenshots/custom-grid.png)
 
