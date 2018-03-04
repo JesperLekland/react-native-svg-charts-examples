@@ -60,6 +60,7 @@ Click an example to see the code! 💪
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-chart-with-labels.png" width=33% />](./storybook/stories/pie-chart/with-labels.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-different-arcs.png" width=33% />](./storybook/stories/pie-chart/with-different-arcs.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-centered-labels.png" width=33% />](./storybook/stories/pie-chart/with-centered-labels.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-image-labels.png" width=33% />](./storybook/stories/pie-chart/with-image-labels.js)
 
 
 
