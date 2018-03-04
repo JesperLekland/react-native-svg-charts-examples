@@ -15,12 +15,15 @@ Click an example to see the code! 💪
 # Examples
 
 * [AreaChart](#areachart)
+* [StackedAreaChart](#stackedareachart)
 * [Bar](#bar)
 * [Line](#linechart)
 * [ProgressCircle](#progresscircle)
+* [PieChart](#piechart)
 
 ## AreaChart
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-chart.png" width=33% />](./storybook/stories/area-chart/with-line.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/grid-min-max.png" width=33% />](./storybook/stories/grid-min-max.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient.png" width=33% />](./storybook/stories/area-chart/with-gradient.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/partial-chart-area.png" width=33% />](./storybook/stories/partial-chart/area-chart.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/layered-charts.png" width=33% />](./storybook/stories/layered-charts.js)
@@ -30,6 +33,10 @@ Click an example to see the code! 💪
 
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/grouped-bar-chart.png" width=33% />](./storybook/stories/bar-chart/with-multiple-data-sets.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient-bar.png" width=33% />](./storybook/stories/bar-chart/with-gradient.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-with-different-bars.png" width=33% />](./storybook/stories/bar-chart/with-different-bars.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal.png" width=33% />](./storybook/stories/bar-chart/horizontal.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal-with-axis.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-axis.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal-with-labels.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-labels.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-band.png" width=33% />](./storybook/stories/x-axis/scale-band.js)
 
 ## LineChart
@@ -40,9 +47,21 @@ Click an example to see the code! 💪
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/custom-grid.png" width=33% />](./storybook/stories/custom-grid.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
 
+## StackedAreaChart
+
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-stack-with-y-axis.png" width=33% />](./storybook/stories/area-stack/with-y-axis.js)
+
 ## ProgressCircle
 
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/progress-gauge.png" width=33% />](./storybook/stories/progress-gauge/index.js)
+
+## PieChart
+
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-chart-with-labels.png" width=33% />](./storybook/stories/pie-chart/with-labels.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-different-arcs.png" width=33% />](./storybook/stories/pie-chart/with-different-arcs.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-centered-labels.png" width=33% />](./storybook/stories/pie-chart/with-centered-labels.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/pie-with-image-labels.png" width=33% />](./storybook/stories/pie-chart/with-image-labels.js)
+
 
 
 ## License
