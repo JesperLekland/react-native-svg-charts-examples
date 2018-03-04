@@ -6085,9 +6085,9 @@ react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.2.tgz#7dbca530930f7c1ce8633cc8fd13ba94102992e1"
 
-react-native-svg-charts@^4.0.0-beta:
-  version "4.0.0-beta"
-  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-4.0.0-beta.tgz#2da98b45a0d3197a854aa4e83c00582765ef3d95"
+react-native-svg-charts@^4.0.0-beta-2:
+  version "4.0.0-beta-2"
+  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-4.0.0-beta-2.tgz#b73cb7daf6a37a744d6ea995763443e92e6c0f93"
   dependencies:
     d3-array "^1.2.0"
     d3-interpolate-path "2.0.0"

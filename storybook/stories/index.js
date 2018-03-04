@@ -22,6 +22,7 @@ import PieChart from './pie-chart'
 import PieChartWithLabels from './pie-chart/with-labels'
 import PieChartWithDifferentArcs from './pie-chart/with-different-arcs'
 import PieChartWithCenteredLabels from './pie-chart/with-centered-labels';
+import PieChartWithImageLabels from './pie-chart/with-image-labels';
 
 import ProgressCircle from './progress-circle'
 import ProgressGauge from './progress-gauge'
@@ -66,6 +67,7 @@ storiesOf('PieChart', module)
     .add('Standard', () => <PieChart/>)
     .add('With labels', () => <PieChartWithLabels/>)
     .add('With centered labels', () => <PieChartWithCenteredLabels/>)
+    .add('With Image labels', () => <PieChartWithImageLabels/>)
     .add('With different arcs', () => <PieChartWithDifferentArcs/>)
 
 storiesOf('ProgressCircle', module)
