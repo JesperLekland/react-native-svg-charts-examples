@@ -20,6 +20,8 @@ import BarChartHorizontalWithLabels from './bar-chart/horizontal-with-labels'
 
 import PieChart from './pie-chart'
 import PieChartWithLabels from './pie-chart/with-labels'
+import PieChartWithDifferentArcs from './pie-chart/with-different-arcs'
+import PieChartWithCenteredLabels from './pie-chart/with-centered-labels';
 
 import ProgressCircle from './progress-circle'
 import ProgressGauge from './progress-gauge'
@@ -39,6 +41,7 @@ import GridMinMax from './grid-min-max'
 import CustomGrid from './custom-grid'
 import PartialAreaChart from './partial-chart/area-chart'
 import PartialLineChart from './partial-chart/line-chart'
+
 
 storiesOf('AreaChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
@@ -62,6 +65,8 @@ storiesOf('PieChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
     .add('Standard', () => <PieChart/>)
     .add('With labels', () => <PieChartWithLabels/>)
+    .add('With centered labels', () => <PieChartWithCenteredLabels/>)
+    .add('With different arcs', () => <PieChartWithDifferentArcs/>)
 
 storiesOf('ProgressCircle', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
