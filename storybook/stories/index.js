@@ -13,7 +13,7 @@ import LineChart from './line-chart/with-shadow'
 // BarCharts
 import MultipleBarChart from './bar-chart/with-multiple-data-sets'
 import BarChartWithGradient from './bar-chart/with-gradient'
-import BarChartWithColors from './bar-chart/with-different-colors'
+import BarChartWithDifferentBars from './bar-chart/with-different-bars'
 import BarChartHorizontal from './bar-chart/horizontal'
 import BarChartHorizontalWithYAxis from './bar-chart/horizontal-with-axis'
 import BarChartHorizontalWithLabels from './bar-chart/horizontal-with-labels'
@@ -53,7 +53,7 @@ storiesOf('BarChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
     .add('With Multiple data set', () => <MultipleBarChart/>)
     .add('With Gradient', () => <BarChartWithGradient/>)
-    .add('With Different Colors', () => <BarChartWithColors/>)
+    .add('With Different Bars', () => <BarChartWithDifferentBars/>)
     .add('Horizontal', () => <BarChartHorizontal/>)
     .add('Horizontal with YAxis', () => <BarChartHorizontalWithYAxis/>)
     .add('Horizontal with Labels', () => <BarChartHorizontalWithLabels/>)
