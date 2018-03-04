@@ -31,12 +31,12 @@ Click an example to see the code! 💪
 
 ## BarChart
 
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/grouped-bar-chart.png" width=33% />](./storybook/stories/bar-chart/with-multiple-data-sets.js)
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/gradient-bar.png" width=33% />](./storybook/stories/bar-chart/with-gradient.js)
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-with-different-bars.png" width=33% />](./storybook/stories/bar-chart/with-different-bars.js)
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal.png" width=33% />](./storybook/stories/bar-chart/horizontal.js)
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal-with-axis.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-axis.js)
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-horizontal-with-labels.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-labels.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-grouped.png" width=33% />](./storybook/stories/bar-chart/with-multiple-data-sets.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-gradient.png" width=33% />](./storybook/stories/bar-chart/with-gradient.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-with-different-bars.png" width=33% />](./storybook/stories/bar-chart/with-different-bars.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-horizontal.png" width=33% />](./storybook/stories/bar-chart/horizontal.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-horizontal-with-axis.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-axis.js)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/bar-chart-horizontal-with-labels.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-labels.js)
 [<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/scale-band.png" width=33% />](./storybook/stories/x-axis/scale-band.js)
 
 ## LineChart
