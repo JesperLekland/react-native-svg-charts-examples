@@ -10,8 +10,13 @@ import AreaChartWithGradient from './area-chart/with-gradient'
 
 import LineChart from './line-chart/with-shadow'
 
+// BarCharts
 import MultipleBarChart from './bar-chart/with-multiple-data-sets'
 import BarChartWithGradient from './bar-chart/with-gradient'
+import BarChartWithColors from './bar-chart/with-different-colors'
+import BarChartHorizontal from './bar-chart/horizontal'
+import BarChartHorizontalWithYAxis from './bar-chart/horizontal-with-axis'
+import BarChartHorizontalWithLabels from './bar-chart/horizontal-with-labels'
 
 import PieChart from './pie-chart'
 import PieChartWithLabels from './pie-chart/with-labels'
@@ -28,12 +33,7 @@ import XAxisScaleTimeExample from './x-axis/scale-time'
 import XAxisScaleLinearExample from './x-axis/scale-linear'
 
 import YAxisExample from './y-axis'
-
-import WaterfallChartExample from './waterfall-chart'
-
-import AreaStack from './area-stack/'
 import AreaStackWithAxisExample from './area-stack/with-y-axis'
-import StackedBarChartExample from './bar-stack/index'
 
 import GridMinMax from './grid-min-max'
 import CustomGrid from './custom-grid'
@@ -53,6 +53,10 @@ storiesOf('BarChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
     .add('With Multiple data set', () => <MultipleBarChart/>)
     .add('With Gradient', () => <BarChartWithGradient/>)
+    .add('With Different Colors', () => <BarChartWithColors/>)
+    .add('Horizontal', () => <BarChartHorizontal/>)
+    .add('Horizontal with YAxis', () => <BarChartHorizontalWithYAxis/>)
+    .add('Horizontal with Labels', () => <BarChartHorizontalWithLabels/>)
 
 storiesOf('PieChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
