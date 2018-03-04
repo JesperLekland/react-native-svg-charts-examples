@@ -49,7 +49,7 @@ Click an example to see the code! 💪
 
 ## StackedAreaChart
 
-[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-stack-with-y-axis.png" width=33% />](./storybook/stories/area-stack/with-y-axis)
+[<img src="https://raw.githubusercontent.com/jesperlekland/react-native-svg-charts-examples/master/screenshots/area-stack-with-y-axis.png" width=33% />](./storybook/stories/area-stack/with-y-axis.js)
 
 ## ProgressCircle
 
