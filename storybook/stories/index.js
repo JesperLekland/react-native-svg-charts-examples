@@ -36,6 +36,7 @@ import XAxisScaleTimeExample from './x-axis/scale-time'
 import XAxisScaleLinearExample from './x-axis/scale-linear'
 
 import YAxisExample from './y-axis'
+import AxesExample from './both-axes'
 import AreaStackWithAxisExample from './area-stack/with-y-axis'
 
 import GridMinMax from './grid-min-max'
@@ -81,6 +82,7 @@ storiesOf('Axes', module)
     .add('XAxis - scaleLinear', () => <XAxisScaleLinearExample/>)
     .add('XAxis - scaleTime', () => <XAxisScaleTimeExample/>)
     .add('XAxis - scaleBand', () => <XAxisScaleBandExample/>)
+    .add('Both Axes', () => <AxesExample/>)
 
 storiesOf('Others', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)

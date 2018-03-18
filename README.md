@@ -46,6 +46,7 @@ Click an example to see the code! 💪
 [<img src="./screenshots/partial-chart-line.png" width=33% />](./storybook/stories/partial-chart/line-chart.js)
 [<img src="./screenshots/custom-grid.png" width=33% />](./storybook/stories/custom-grid.js)
 [<img src="./screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
+[<img src="./screenshots/both-axes.png" width=33% />](./storybook/stories/both-axes.js)
 
 ## StackedAreaChart
 
