@@ -17,6 +17,7 @@ import BarChartWithDifferentBars from './bar-chart/with-different-bars'
 import BarChartHorizontal from './bar-chart/horizontal'
 import BarChartHorizontalWithYAxis from './bar-chart/horizontal-with-axis'
 import BarChartHorizontalWithLabels from './bar-chart/horizontal-with-labels'
+import BarChartVerticalWithLabels from './bar-chart/vertical-with-labels'
 
 import PieChart from './pie-chart'
 import PieChartWithLabels from './pie-chart/with-labels'
@@ -62,6 +63,7 @@ storiesOf('BarChart', module)
     .add('Horizontal', () => <BarChartHorizontal/>)
     .add('Horizontal with YAxis', () => <BarChartHorizontalWithYAxis/>)
     .add('Horizontal with Labels', () => <BarChartHorizontalWithLabels/>)
+    .add('Vertical with Labels', () => <BarChartVerticalWithLabels/>)
 
 storiesOf('PieChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
