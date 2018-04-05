@@ -4,7 +4,7 @@ This repository is meant to serve as a showcase for [`react-native-svg-charts`](
 Here we try to gather all the coolest implementations and use cases to serve as inspiration for other people. Open Source is all about sharing knowledge!
 
 Have you ever made a cool graph using `react-native-svg-charts`, maybe a super complex use case or just really pretty design?
-Make a PR with your code and include it here for everyone to see. 
+Make a PR with your code and include it here for everyone to see.
 
 Have a separate repo with some awesome examples? Make a PR and just include the link to your repo in this README, We'd rather have too many cool examples!
 
@@ -37,6 +37,7 @@ Click an example to see the code! 💪
 [<img src="./screenshots/bar-chart-horizontal.png" width=33% />](./storybook/stories/bar-chart/horizontal.js)
 [<img src="./screenshots/bar-chart-horizontal-with-axis.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-axis.js)
 [<img src="./screenshots/bar-chart-horizontal-with-labels.png" width=33% />](./storybook/stories/bar-chart/horizontal-with-labels.js)
+[<img src="./screenshots/bar-chart-vertical-with-labels.png" width=33% />](./storybook/stories/bar-chart/vertical-with-labels.js)
 [<img src="./screenshots/scale-band.png" width=33% />](./storybook/stories/x-axis/scale-band.js)
 
 ## LineChart
