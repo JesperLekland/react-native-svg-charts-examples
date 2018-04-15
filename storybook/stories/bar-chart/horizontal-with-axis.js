@@ -50,8 +50,9 @@ class HorizontaBarChartWithYAxis extends React.PureComponent {
                     contentInset={{ top: 10, bottom: 10 }}
                     spacing={0.2}
                     gridMin={0}
-                    renderGrid={Grid.Vertical}
-                />
+                >
+                    <Grid direction={Grid.Direction.VERTICAL}/>
+                </BarChart>
             </View>
         )
     }

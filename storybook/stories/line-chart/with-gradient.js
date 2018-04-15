@@ -1,6 +1,6 @@
 import React from 'react'
 import { Defs, LinearGradient, Stop } from 'react-native-svg'
-import { LineChart } from 'react-native-svg-charts'
+import { LineChart, Grid } from 'react-native-svg-charts'
 
 class GradientLineExample extends React.PureComponent {
 
@@ -26,8 +26,10 @@ class GradientLineExample extends React.PureComponent {
                     strokeWidth: 2,
                     stroke: 'url(#gradient)',
                 }}
-                extras={[ Gradient ]}
-            />
+            >
+                <Grid/>
+                <Gradient/>
+            </LineChart>
         )
     }
 

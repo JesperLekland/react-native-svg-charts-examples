@@ -83,12 +83,13 @@ class BarChartExample extends React.PureComponent {
                         fill: 'blue',
                     }}
                     horizontal={true}
-                    extras={[ Gradient ]}
                     contentInset={{ top: 10, bottom: 10 }}
                     spacing={0.2}
                     gridMin={0}
-                    renderGrid={Grid.Vertical}
-                />
+                >
+                    <Grid direction={Grid.Direction.VERTICAL}/>
+                    <Gradient/>
+                </BarChart>
             </View>
         )
     }

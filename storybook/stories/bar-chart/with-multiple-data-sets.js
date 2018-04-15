@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart } from 'react-native-svg-charts'
+import { BarChart, Grid } from 'react-native-svg-charts'
 
 class GroupedBarChartExample extends React.PureComponent {
 
@@ -32,7 +32,9 @@ class GroupedBarChartExample extends React.PureComponent {
                 }}
                 contentInset={ { top: 30, bottom: 30 } }
                 { ...this.props }
-            />
+            >
+                <Grid/>
+            </BarChart>
         )
     }
 

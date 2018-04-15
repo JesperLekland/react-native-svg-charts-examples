@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, Path } from 'react-native-svg-charts'
+import { LineChart, Path, Grid } from 'react-native-svg-charts'
 
 class LineChartExample extends React.PureComponent {
 
@@ -24,8 +24,10 @@ class LineChartExample extends React.PureComponent {
                 data={ data }
                 svg={{ stroke: 'rgb(134, 65, 244)' }}
                 contentInset={ { top: 20, bottom: 20 } }
-                extras={[ Shadow ]}
-            />
+            >
+                <Grid/>
+                <Shadow/>
+            </LineChart>
         )
     }
 

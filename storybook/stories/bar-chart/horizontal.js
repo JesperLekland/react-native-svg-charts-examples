@@ -1,6 +1,6 @@
 import React from 'react'
 import { View } from 'react-native'
-import { BarChart } from 'react-native-svg-charts'
+import { BarChart, Grid } from 'react-native-svg-charts'
 
 class BarChartExample extends React.PureComponent {
 
@@ -18,8 +18,9 @@ class BarChartExample extends React.PureComponent {
                     contentInset={{ top: 10, bottom: 10 }}
                     spacing={0.2}
                     gridMin={0}
-                    showGrid={false}
-                />
+                >
+                    <Grid direction={Grid.Direction.VERTICAL}/>
+                </BarChart>
             </View>
         )
     }
