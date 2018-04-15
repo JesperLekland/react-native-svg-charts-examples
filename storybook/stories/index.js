@@ -9,6 +9,7 @@ import AreaChartWithGradient from './area-chart/with-gradient'
 
 
 import LineChart from './line-chart/with-shadow'
+import LineChartWithGradient from './line-chart/with-gradient'
 
 // BarCharts
 import MultipleBarChart from './bar-chart/with-multiple-data-sets'
@@ -54,6 +55,7 @@ storiesOf('AreaChart', module)
 storiesOf('LineChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
     .add('With shadow', () => <LineChart/>)
+    .add('With gradient', () => <LineChartWithGradient/>)
 
 storiesOf('BarChart', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
