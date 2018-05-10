@@ -15,7 +15,7 @@
     "react": "16.2.0",
     "react-native": "0.53.3",
     "react-native-svg": "^6.2.2",
-    "react-native-svg-charts": "^4.0.0"
+    "react-native-svg-charts": "^5.0.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.14",

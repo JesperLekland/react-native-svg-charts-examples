@@ -35,14 +35,10 @@ class PieChartWithCenteredLabels extends React.PureComponent {
             }
         ]
 
-        return (
-            <PieChart
-                style={{ height: 200 }}
-                valueAccessor={({ item }) => item.amount}
-                data={data}
-                spacing={0}
-                outerRadius={'95%'}
-                renderDecorator={({ item, pieCentroid, labelCentroid, index }) => (
+        const Labels = ({ slices, height, width }) => {
+            return slices.map((slice, index) => {
+                const { labelCentroid, pieCentroid, data } = slice;
+                return (
                     <G
                         key={index}
                         x={labelCentroid[ 0 ]}
@@ -62,9 +58,20 @@ class PieChartWithCenteredLabels extends React.PureComponent {
                             href={Images.memes[ index + 1 ]}
                         />
                     </G>
-                )}
+                )
+            })
+        }
 
-            />
+        return (
+            <PieChart
+                style={{ height: 200 }}
+                valueAccessor={({ item }) => item.amount}
+                data={data}
+                spacing={0}
+                outerRadius={'95%'}
+            >
+                <Labels/>
+            </PieChart>
         )
     }
 

@@ -47,8 +47,6 @@ class AreaStackChartExample extends React.PureComponent {
                 keys={ keys }
                 colors={ colors }
                 curve={ shape.curveNatural }
-                showGrid={ false }
-                { ...this.props }
             />
         )
     }

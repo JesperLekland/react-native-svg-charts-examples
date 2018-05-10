@@ -48,8 +48,9 @@ class CustomGridExample extends React.PureComponent {
                     svg={ {
                         stroke: 'rgb(134, 65, 244)',
                     } }
-                    renderGrid={ CustomGrid }
-                />
+                >
+                    <CustomGrid belowChart={true}/>
+                </LineChart>
             </View>
         )
     }
