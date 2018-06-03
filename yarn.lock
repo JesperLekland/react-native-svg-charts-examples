@@ -6085,9 +6085,9 @@ react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.2.tgz#7dbca530930f7c1ce8633cc8fd13ba94102992e1"
 
-react-native-svg-charts@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-5.0.0.tgz#bab44a259186c354d3a54cc5963003f1a71d183b"
+react-native-svg-charts@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-svg-charts/-/react-native-svg-charts-5.1.1.tgz#b397f42de016eebad5142d98311deaf82a00b853"
   dependencies:
     d3-array "^1.2.0"
     d3-interpolate-path "2.0.0"
@@ -6096,9 +6096,9 @@ react-native-svg-charts@^5.0.0:
     date-fns "^1.28.5"
     prop-types "^15.6.0"
 
-react-native-svg@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-6.2.2.tgz#5803cddce374a542b4468c38a2474fca32080685"
+react-native-svg@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-6.3.1.tgz#06a573f17c59ce953a56fd62e776fd79d632d765"
   dependencies:
     color "^2.0.1"
     lodash "^4.16.6"

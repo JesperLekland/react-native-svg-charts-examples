@@ -14,8 +14,8 @@
     "date-fns": "^1.28.5",
     "react": "16.2.0",
     "react-native": "0.53.3",
-    "react-native-svg": "^6.2.2",
-    "react-native-svg-charts": "^5.0.0"
+    "react-native-svg": "^6.3.1",
+    "react-native-svg-charts": "^5.1.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.14",
