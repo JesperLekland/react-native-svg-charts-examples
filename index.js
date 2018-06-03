@@ -30,7 +30,7 @@ class App extends React.PureComponent {
           {
             '• Stop your packager \n' +
             '• run "yarn storybook" \n' +
-            '• Go to "localhost:7008" in your browser\n' +
+            '• Go to "localhost:7007" in your browser\n' +
             '• reload your device \n' +
             '• browse our charts'
           }

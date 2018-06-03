@@ -10,18 +10,20 @@ class BarChartVerticalWithLabels extends React.PureComponent {
         const data = [ 10, 5, 25, 15, 20 ]
 
         const CUT_OFF = 20
-        const Label = ({ item: value, x, y, index, bandwidth }) => (
-            <Text
-                key={index}
-                y={value < CUT_OFF ? y(value) - 10 : y(value) + 15}
-                x={x(index) + (bandwidth / 2)}
-                fontSize={14}
-                fill={value > CUT_OFF ? 'white' : 'black'}
-                alignmentBaseline={'middle'}
-                textAnchor={'middle'}
-            >
-                {value}
-            </Text>
+        const Labels = ({ x, y, bandwidth, data }) => (
+            data.map((value, index) => (
+                <Text
+                    key={ index }
+                    x={ x(index) + (bandwidth / 2) }
+                    y={ value < CUT_OFF ? y(value) - 10 : y(value) + 15 }
+                    fontSize={ 14 }
+                    fill={ value >= CUT_OFF ? 'white' : 'black' }
+                    alignmentBaseline={ 'middle' }
+                    textAnchor={ 'middle' }
+                >
+                    {value}
+                </Text>
+            ))
         )
 
         return (
@@ -33,9 +35,10 @@ class BarChartVerticalWithLabels extends React.PureComponent {
                     contentInset={{ top: 10, bottom: 10 }}
                     spacing={0.2}
                     gridMin={0}
-                    renderDecorator={Label}
-                    renderGrid={Grid.Horizontal}
-                />
+                >
+                    <Grid direction={Grid.Direction.HORIZONTAL}/>
+                    <Labels/>
+                </BarChart>
             </View>
         )
     }
