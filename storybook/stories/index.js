@@ -25,6 +25,7 @@ import PieChartWithLabels from './pie-chart/with-labels'
 import PieChartWithDifferentArcs from './pie-chart/with-different-arcs'
 import PieChartWithCenteredLabels from './pie-chart/with-centered-labels';
 import PieChartWithImageLabels from './pie-chart/with-image-labels';
+import PieChartWithDynamicSlices from './pie-chart/with-dynamic-slices';
 
 import ProgressCircle from './progress-circle'
 import ProgressGauge from './progress-gauge'
@@ -74,6 +75,7 @@ storiesOf('PieChart', module)
     .add('With centered labels', () => <PieChartWithCenteredLabels/>)
     .add('With Image labels', () => <PieChartWithImageLabels/>)
     .add('With different arcs', () => <PieChartWithDifferentArcs/>)
+    .add('With dynamic slices', () => <PieChartWithDynamicSlices/>)
 
 storiesOf('ProgressCircle', module)
     .addDecorator(getStory => <ShowcaseCard>{ getStory() }</ShowcaseCard>)
