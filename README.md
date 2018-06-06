@@ -64,6 +64,7 @@ Click an example to see the code! 💪
 [<img src="./screenshots/pie-with-different-arcs.png" width=33% />](./storybook/stories/pie-chart/with-different-arcs.js)
 [<img src="./screenshots/pie-with-centered-labels.png" width=33% />](./storybook/stories/pie-chart/with-centered-labels.js)
 [<img src="./screenshots/pie-with-image-labels.png" width=33% />](./storybook/stories/pie-chart/with-image-labels.js)
+[<img src="./screenshots/pie-chart-with-dynamic-slices.png" width=33% />](./storybook/stories/pie-chart/with-dynamic-slices.js)
 
 
 
