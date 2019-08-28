@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import { PieChart } from 'react-native-svg-charts'
 
-export default class PieChartWithDynamicSlices extends React.PureComponent {
+ class PieChartWithDynamicSlices extends React.PureComponent {
 
   constructor(props) {
     super(props);
