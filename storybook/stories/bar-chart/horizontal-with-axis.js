@@ -36,7 +36,7 @@ class HorizontaBarChartWithYAxis extends React.PureComponent {
                 <YAxis
                     data={data}
                     yAccessor={({ index }) => index}
-                    scale={scale.scaleBand}
+                    scale={scale.scalePow}
                     contentInset={{ top: 10, bottom: 10 }}
                     spacing={0.2}
                     formatLabel={(_, index) => data[ index ].label}
