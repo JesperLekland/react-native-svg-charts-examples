@@ -49,6 +49,7 @@ Click an example to see the code! 💪
 [<img src="./screenshots/extras.png" width=33% />](./storybook/stories/extras.js)
 [<img src="./screenshots/both-axes.png" width=33% />](./storybook/stories/both-axes.js)
 [<img src="./screenshots/decorators.png" width=33% />](./storybook/stories/decorator.js)
+[<img src="./screenshots/multi-line.png" width=33% />](./storybook/stories/line-chart/multi-line.js)
 
 ## StackedAreaChart
 
