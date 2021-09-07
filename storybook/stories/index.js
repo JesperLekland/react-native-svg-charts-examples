@@ -46,6 +46,7 @@ import GridMinMax from './grid-min-max'
 import CustomGrid from './custom-grid'
 import PartialAreaChart from './partial-chart/area-chart'
 import PartialLineChart from './partial-chart/line-chart'
+import InteractiveChart from "./interactive-chart";
 
 
 storiesOf('AreaChart', module)
@@ -99,3 +100,4 @@ storiesOf('Others', module)
     .add('Custom Grid', () => <CustomGrid/>)
     .add('Partial Area Chart', () => <PartialAreaChart/>)
     .add('Partial Line Chart', () => <PartialLineChart/>)
+    .add('Interactive Chart', () => <InteractiveChart/>)

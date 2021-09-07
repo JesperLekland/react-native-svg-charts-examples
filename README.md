@@ -67,6 +67,10 @@ Click an example to see the code! 💪
 [<img src="./screenshots/pie-with-image-labels.png" width=33% />](./storybook/stories/pie-chart/with-image-labels.js)
 [<img src="./screenshots/pie-chart-with-dynamic-slices.png" width=33% />](./storybook/stories/pie-chart/with-dynamic-slices.js)
 
+## InteractiveChart
+
+[<img src="./screenshots/interactive-chart.gif" width=33% />](./storybook/stories/interactive-chart/index.js)
+
 
 
 ## License
