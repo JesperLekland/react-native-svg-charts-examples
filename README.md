@@ -16,10 +16,11 @@ Click an example to see the code! 💪
 
 * [AreaChart](#areachart)
 * [StackedAreaChart](#stackedareachart)
-* [Bar](#bar)
+* [BarChart](#barchart)
 * [Line](#linechart)
 * [ProgressCircle](#progresscircle)
 * [PieChart](#piechart)
+* [InteractiveChart](#interactivechart)
 
 ## AreaChart
 [<img src="./screenshots/area-chart.png" width=33% />](./storybook/stories/area-chart/with-line.js)
